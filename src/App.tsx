@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HeaderOne from './components/HeaderOne';
 import HeaderTwo from './components/HeaderTwo';
