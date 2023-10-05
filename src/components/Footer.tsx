@@ -2,13 +2,17 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Coded by <a 
-    href="https://www.lunasmithart.com/" 
-    target='_blank' 
-    rel="noreferrer" >Luna Smith</a> - <a 
-    href="https://github.com/Lu-Smith/react_headers"  
-    target='_blank' 
-    rel="noreferrer">open source</a></div>
+    <div className='Footer'>
+      <h4>
+        Coded by <a 
+        href="https://www.lunasmithart.com/" 
+        target='_blank' 
+        rel="noreferrer" >Luna Smith</a> - <a 
+        href="https://github.com/Lu-Smith/react_headers"  
+        target='_blank' 
+        rel="noreferrer">open source</a>.
+      </h4>
+    </div>
   )
 }
 
