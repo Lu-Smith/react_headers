@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './styles/HeaderTwo.css';
-
+import ReactSwitch from 'react-switch';
 
 const HeaderTwo = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +22,9 @@ const HeaderTwo = () => {
         <li><NavLink to='/services'>Services</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
+      <div className='switch'>
+          <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
+      </div>
     </nav>
   )
 }
