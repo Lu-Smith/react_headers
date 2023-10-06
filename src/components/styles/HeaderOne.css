@@ -36,3 +36,20 @@
 .HeaderOne ul li a:not(.active):hover {
     background-color: green;
 }
+
+.HeaderOne .menu {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.HeaderOne .menu span {
+    background-color: white;
+    width: 2.25rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
