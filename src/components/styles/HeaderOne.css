@@ -72,6 +72,10 @@
         margin-bottom: 0.25rem;
     }
 
+    .HeaderOne ul.open {
+        display: flex;
+    }
+
     .HeaderOne ul li {
         width: 100%;
         text-align: center;
