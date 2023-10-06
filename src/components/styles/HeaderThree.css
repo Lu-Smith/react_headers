@@ -1,11 +1,11 @@
-.HeaderThree .active {
-    background-color: rgb(22, 4, 39);
+#dark .HeaderThree .active {
+    background-image: linear-gradient(to top, #0c010e 0%, #460b85 50%);
     font-weight: 800;
 }
 
 #light .HeaderThree .active {
     font-weight: 800;
-    background-color: rgb(243, 162, 12);
+    background-image: linear-gradient(to top, #eccf6d 0%, rgb(243, 78, 12) 100%);
     color: white;
 }
 
@@ -27,11 +27,15 @@
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(250, 248, 238);
+    background-image: linear-gradient(to top, #0c010e 0%, #460b85 50%);
+    -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+    color: transparent;
 }
 
 #light .HeaderThree .title a {
-    color: rgb(109, 9, 9);
+    background-image: linear-gradient(to top, #eccf6d 0%, rgb(243, 78, 12) 100%);
+    -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
+    color: transparent; /* Set the text color to transparent */
 }
 
 .HeaderThree ul {
@@ -53,6 +57,8 @@
 #light .HeaderThree ul li a {
     color: rgb(109, 9, 9);
     font-weight: 500;
+    transition: 200ms all ease-in-out;
+    background-image: linear-gradient(to top, rgb(238, 228, 211) 0%, rgb(238, 228, 211) 100%);
 }
 
 .HeaderThree ul li a:not(.active):hover {
