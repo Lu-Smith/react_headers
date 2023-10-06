@@ -7,7 +7,7 @@ const HeaderOne = () => {
 
   return (
     <nav className='HeaderOne'>
-      <div className='title'><Link to='/'>Logo</Link></div>
+      <div className='title'><Link to='/'>Basic</Link></div>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen)
       }}>
