@@ -14,7 +14,6 @@ import Contact from './components/pages/Contact';
 import Services from './components/pages/Services';
 //theme
 import { createContext } from 'react';
-import ReactSwitch from 'react-switch';
 
 interface ThemeProps {
   theme: string;
@@ -33,7 +32,7 @@ function App() {
     <ThemeContext.Provider value={{theme, toggleTheme}}>
       <div className="App" id={theme}>
         <HeaderOne />
-        <HeaderTwo />
+        <HeaderTwo toggleTheme={toggleTheme} theme={theme} />
         <HeaderThree />
         <HeaderFour />
         <Routes>
@@ -42,9 +41,6 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        <div className='switch'>
-          <ReactSwitch />
-        </div>
         <Footer />
       </div>
     </ThemeContext.Provider>
