@@ -26,7 +26,11 @@ const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/'>
+          <span className="material-symbols-outlined">
+            home
+          </span>
+        </NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
         <li><NavLink to='/services'>Services</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
