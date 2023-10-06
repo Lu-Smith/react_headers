@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    position: sticky;
+    top: 0;
 }
 
 .HeaderOne .title a {
@@ -31,6 +33,6 @@
     border-radius: 0.5rem;
 }
 
-.HeaderOne ul li a:hover {
+.HeaderOne ul li a:not(.active):hover {
     background-color: green;
 }
