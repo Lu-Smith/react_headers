@@ -15,6 +15,7 @@ const HeaderTwo = ({toggleTheme, theme}: ThemeProps) => {
     <nav className='HeaderTwo'>
       <div className='title'><Link to='/'>Standard</Link></div>
       <div className='switch'>
+        <label htmlFor="">{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</label>
           <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
       <div className="menu" onClick={() => {
