@@ -8,11 +8,12 @@ const HeaderOne = () => {
   return (
     <nav className='HeaderOne'>
       <div className='title'><Link to='/'>Logo</Link></div>
-      <div className="menu">
-        <span>Home</span>
-        <span>About</span>
-        <span>Services</span>
-        <span>Contact</span>
+      <div className="menu" onClick={() => {
+        setMenuOpen(!menuOpen)
+      }}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li><NavLink to='/'>Home</NavLink></li>
