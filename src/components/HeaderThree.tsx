@@ -15,7 +15,14 @@ const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
     <nav className='HeaderThree'>
       <div className='title'><Link to='/'>Advanced</Link></div>
       <div className='switch'>
-        <label htmlFor="">{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</label>
+        <label>{theme === 'light' ? 
+          <span className="material-symbols-outlined">
+          light_mode
+          </span> : 
+          <span className="material-symbols-outlined">
+          dark_mode
+          </span>
+      }</label>
           <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
       <div className={!menuOpen ? "menu" : ""} onClick={() => {

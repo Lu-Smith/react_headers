@@ -9,14 +9,6 @@
     color: white;
 }
 
-.HeaderThree  .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 10,
-    'wght' 800,
-    'GRAD' 0,
-    'opsz' 4
-}
-
 .HeaderThree {
     background-color: rgb(243, 78, 12);
     display: flex;
@@ -27,7 +19,7 @@
 }
 
 #light .HeaderThree {
-    background-color: rgb(241, 211, 164);
+    background-color: rgb(238, 228, 211);
 }
 
 .HeaderThree .title a {
@@ -114,9 +106,22 @@
 
 .HeaderThree .switch {
     display: flex;
-    width: 150px;
+    width: 90px;
     justify-content: space-around;
     align-items: center;
+}
+
+.HeaderThree  .material-symbols-outlined {
+    color: black;
+    font-variation-settings:
+    'FILL' 10,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 4
+}
+
+#light .HeaderThree .material-symbols-outlined {
+    color: rgb(243, 162, 12);
 }
 
 @media (max-width: 760px) {
