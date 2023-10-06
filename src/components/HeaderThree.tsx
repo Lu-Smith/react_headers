@@ -21,9 +21,16 @@ const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen)
       }}>
-        <span></span>
-        <span></span>
-        <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div className="menuX" onClick={() => {
+        setMenuOpen(!menuOpen)
+      }}>
+        <span className="material-symbols-outlined">
+          close
+        </span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li><NavLink to='/'>
