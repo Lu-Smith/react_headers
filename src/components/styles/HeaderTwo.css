@@ -30,6 +30,7 @@
     font-weight: bold;
     text-decoration: none;
     color: rgb(250, 248, 238);
+    transition: 200ms all ease-in-out;
 }
 
 #light .HeaderTwo .title a {

@@ -18,6 +18,7 @@
     font-weight: bold;
     text-decoration: none;
     color: white;
+    transition: 200ms all ease-in-out;
 }
 
 .HeaderOne ul {
