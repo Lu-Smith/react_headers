@@ -1,5 +1,13 @@
-.active {
-    background-color: rgb(84, 23, 141);
+.HeaderTwo .active {
+    border: 1px solid rgb(228, 207, 16);
+    background-color: rgb(42, 9, 73);
+    font-weight: 800;
+}
+
+#light .HeaderTwo .active {
+    border: 2px solid rgb(40, 43, 42);
+    font-weight: 800;
+    background-color: rgb(159, 211, 135);
 }
 
 .HeaderTwo {
@@ -12,12 +20,20 @@
     top: 0;
 }
 
+#light .HeaderTwo {
+    background-color: rgb(159, 211, 135);
+}
+
 .HeaderTwo .title a {
     font-size: 1.5rem;
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
+}
+
+#light .HeaderTwo .title a {
+    color: black;
 }
 
 .HeaderTwo ul {
@@ -33,8 +49,16 @@
     border-radius: 0.5rem;
 }
 
+#light .HeaderTwo ul li a {
+    color: black;
+}
+
 .HeaderTwo ul li a:not(.active):hover {
     background-color: green;
+}
+
+#light .HeaderTwo ul li a:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .HeaderTwo .menu {
@@ -53,6 +77,10 @@
     width: 2.25rem;
     height: 0.4rem;
     border-radius: 0.2rem;
+}
+
+#light .HeaderTwo .menu span  {
+    background-color: rgb(49, 49, 48);
 }
 
 @media (max-width: 480px) {
