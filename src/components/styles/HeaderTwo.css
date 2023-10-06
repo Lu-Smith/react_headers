@@ -86,7 +86,6 @@
 .HeaderTwo .switch {
     display: flex;
     width: 400px;
-    height: 100px;
     justify-content: center;
     align-items: center;
 }

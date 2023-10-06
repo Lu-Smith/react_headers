@@ -3,12 +3,20 @@ import { Link, NavLink } from 'react-router-dom';
 import './styles/HeaderTwo.css';
 import ReactSwitch from 'react-switch';
 
-const HeaderTwo = () => {
+interface ThemeProps {
+  theme: string;
+  toggleTheme: () => void;
+};
+
+const HeaderTwo = ({toggleTheme, theme}: ThemeProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className='HeaderTwo'>
       <div className='title'><Link to='/'>Standard</Link></div>
+      <div className='switch'>
+          <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
+      </div>
       <div className="menu" onClick={() => {
         setMenuOpen(!menuOpen)
       }}>
@@ -22,9 +30,7 @@ const HeaderTwo = () => {
         <li><NavLink to='/services'>Services</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
-      <div className='switch'>
-          <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
-      </div>
+ 
     </nav>
   )
 }
