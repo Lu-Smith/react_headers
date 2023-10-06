@@ -1,0 +1,87 @@
+.active {
+    background-color: rgb(84, 23, 141);
+}
+
+.HeaderTwo {
+    background-color: rgb(42, 9, 73);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.HeaderTwo .title a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.HeaderTwo ul {
+    display: flex;
+    list-style: none;
+}
+
+.HeaderTwo ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.HeaderTwo ul li a:not(.active):hover {
+    background-color: green;
+}
+
+.HeaderTwo .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.HeaderTwo .menu span {
+    background-color: white;
+    width: 2.25rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    .HeaderTwo .menu {
+        display: flex;
+    }
+
+    .HeaderTwo {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .HeaderTwo ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .HeaderTwo ul.open {
+        display: flex;
+    }
+
+    .HeaderTwo ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .HeaderTwo ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
