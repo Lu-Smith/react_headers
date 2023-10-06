@@ -1,17 +1,20 @@
 import React, {useState} from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+//components
 import HeaderOne from './components/HeaderOne';
 import HeaderTwo from './components/HeaderTwo';
 import HeaderThree from './components/HeaderThree';
 import HeaderFour from './components/HeaderFour';
 import Footer from './components/Footer';
-import { Routes, Route } from 'react-router-dom';
+//pages
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Services from './components/pages/Services';
 //theme
-import { createContext } from 'react';;
+import { createContext } from 'react';
+import ReactSwitch from 'react-switch';
 
 interface ThemeProps {
   theme: string;
@@ -39,6 +42,9 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+        <div className='switch'>
+          <ReactSwitch />
+        </div>
         <Footer />
       </div>
     </ThemeContext.Provider>
