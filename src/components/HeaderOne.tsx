@@ -6,6 +6,12 @@ const HeaderOne = () => {
   return (
     <nav className='HeaderOne'>
       <div className='title'><Link to='/'>Logo</Link></div>
+      <div className="manu">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+      </div>
       <ul>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/about'>About</NavLink></li>
