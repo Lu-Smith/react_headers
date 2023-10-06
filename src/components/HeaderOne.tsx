@@ -5,7 +5,7 @@ import './styles/HeaderOne.css';
 const HeaderOne = () => {
   return (
     <nav className='HeaderOne'>
-      <div><Link to='/'>Logo</Link></div>
+      <div className='title'><Link to='/'>Logo</Link></div>
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
