@@ -1,6 +1,14 @@
 .App {
-    background-color: rgb(223, 224, 217);
     height: 100%;
     width: 100%;
+}
+
+#light {
+    background-color: rgb(223, 224, 217);
     color: rgb(36, 35, 35);
+}
+
+#dark {
+    background-color: rgb(31, 30, 30);
+    color: rgb(223, 224, 217);
 }
