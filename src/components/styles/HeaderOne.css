@@ -1,5 +1,5 @@
 .active {
-    background-color: green;
+    background-color: rgb(84, 23, 141);
 }
 
 .HeaderOne {
@@ -29,4 +29,8 @@
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+
+.HeaderOne ul li a:hover {
+    background-color: green;
 }
