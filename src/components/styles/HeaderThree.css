@@ -80,6 +80,15 @@
     height: 2rem;
 }
 
+.HeaderThree .menuX {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .HeaderThree .menu span {
     background-color: rgb(250, 248, 238);
     width: 2.25rem;
@@ -100,6 +109,10 @@
 
 @media (max-width: 760px) {
     .HeaderThree .menu {
+        display: flex;
+    }
+
+    .HeaderThree .menuX {
         display: flex;
     }
 
