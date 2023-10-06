@@ -1,0 +1,141 @@
+.HeaderThree .active {
+    border: 1px solid rgb(228, 207, 16);
+    background-color: rgb(22, 4, 39);
+    font-weight: 800;
+}
+
+#light .HeaderThree .active {
+    border: 2px solid rgb(40, 43, 42);
+    font-weight: 800;
+    background-color: rgb(159, 211, 135);
+}
+
+.HeaderThree {
+    background-color: rgb(22, 4, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+#light .HeaderThree {
+    background-color: rgb(159, 211, 135);
+}
+
+.HeaderThree .title a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(250, 248, 238);
+}
+
+#light .HeaderThree .title a {
+    color: black;
+}
+
+.HeaderThree ul {
+    display: flex;
+    list-style: none;
+}
+
+.HeaderThree ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(250, 248, 238);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#light .HeaderThree ul li a {
+    color: black;
+}
+
+.HeaderThree ul li a:not(.active):hover {
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+#light .HeaderThree ul li a:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.HeaderThree .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.HeaderThree .menu span {
+    background-color: rgb(250, 248, 238);
+    width: 2.25rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+#light .HeaderThree .menu span  {
+    background-color: rgb(49, 49, 48);
+}
+
+.HeaderThree .switch {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+    .HeaderThree .menu {
+        display: flex;
+    }
+
+    .HeaderThree {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .HeaderThree ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .HeaderThree ul.open {
+        display: flex;
+    }
+
+    .HeaderThree ul li {
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .HeaderThree ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+    .HeaderThree .switch  label{
+        display: none;
+    }
+
+    .HeaderThree .switch {
+        justify-content: center;
+    }
+
+    .HeaderThree .active {
+        border: none;
+        font-weight: 700;
+    }
+    
+    #light .HeaderThree .active {
+        border: none;
+        font-weight: 700;
+    }
+}

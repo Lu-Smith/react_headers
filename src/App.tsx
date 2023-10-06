@@ -33,7 +33,7 @@ function App() {
       <div className="App" id={theme}>
         <HeaderOne />
         <HeaderTwo toggleTheme={toggleTheme} theme={theme} />
-        <HeaderThree />
+        <HeaderThree toggleTheme={toggleTheme} theme={theme}  />
         <HeaderFour />
         <Routes>
           <Route path='/' element={<Home />} />

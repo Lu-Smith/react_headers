@@ -1,16 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import './styles/HeaderThree.css';
+import ReactSwitch from 'react-switch';
 
-const HeaderThree = () => {
+interface ThemeProps {
+  theme: string;
+  toggleTheme: () => void;
+};
+
+const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className='HeaderThree'>
-    <div>logo</div>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Shop</li>
-      <li>Contact</li>
-    </ul>
-  </div>
+    <nav className='HeaderThree'>
+      <div className='title'><Link to='/'>Advanced</Link></div>
+      <div className='switch'>
+        <label htmlFor="">{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</label>
+          <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
+      </div>
+      <div className="menu" onClick={() => {
+        setMenuOpen(!menuOpen)
+      }}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/services'>Services</NavLink></li>
+        <li><NavLink to='/contact'>Contact</NavLink></li>
+      </ul>
+ 
+    </nav>
   )
 }
 
