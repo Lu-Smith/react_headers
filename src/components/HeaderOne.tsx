@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles/HeaderOne.css';
 
 const HeaderOne = () => {
@@ -7,10 +7,10 @@ const HeaderOne = () => {
     <nav className='HeaderOne'>
       <div className='title'><Link to='/'>Logo</Link></div>
       <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/services'>Services</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/services'>Services</NavLink></li>
+        <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
     </nav>
   )
