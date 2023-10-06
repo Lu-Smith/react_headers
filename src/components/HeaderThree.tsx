@@ -18,14 +18,14 @@ const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
         <label htmlFor="">{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</label>
           <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
-      <div className="menu" onClick={() => {
+      <div className={!menuOpen ? "menu" : ""} onClick={() => {
         setMenuOpen(!menuOpen)
       }}>
           <span></span>
           <span></span>
           <span></span>
       </div>
-      <div className="menuX" onClick={() => {
+      <div className={!menuOpen ? "menuXHidden" : "menuX"} onClick={() => {
         setMenuOpen(!menuOpen)
       }}>
         <span className="material-symbols-outlined">

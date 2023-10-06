@@ -12,10 +12,10 @@
 
 .HeaderThree  .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
+    'FILL' 10,
+    'wght' 800,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 4
 }
 
 .HeaderThree {
@@ -114,6 +114,10 @@
 
     .HeaderThree .menuX {
         display: flex;
+    }
+
+    .HeaderThree .menuXHidden {
+        display: none;
     }
 
     .HeaderThree {
