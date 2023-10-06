@@ -6,10 +6,6 @@ import HeaderThree from './components/HeaderThree';
 import HeaderFour from './components/HeaderFour';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
-import About from './components/pages/About';
-import Services from './components/pages/Services';
-import Contact from './components/pages/Contact';
-import Home from './components/pages/Home';
 
 function App() {
   return (
