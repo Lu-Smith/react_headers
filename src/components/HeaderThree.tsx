@@ -49,7 +49,6 @@ const HeaderThree = ({toggleTheme, theme}: ThemeProps) => {
         <li><NavLink to='/services'>Services</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
       </ul>
- 
     </nav>
   )
 }
