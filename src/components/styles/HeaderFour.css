@@ -22,11 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    width: 100vw;
+
 }
 
 #light .HeaderFour {
-    background-color: rgb(52, 80, 80);
+    background-color: rgb(97, 134, 134);
 }
 
 .HeaderFour .title a {
@@ -35,6 +36,7 @@
     font-weight: bold;
     text-decoration: none;
     color: white;
+    padding: 0.8rem 0.6rem;
 }
 
 #light .HeaderFour .title a {
@@ -46,6 +48,7 @@
     list-style: none;
     align-items: center;
     justify-content: center;
+    padding: 0rem 1rem;
 }
 
 .HeaderFour ul li a {
@@ -82,16 +85,7 @@
     height: 2rem;
 }
 
-.HeaderFour .menuX {
-    display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.HeaderFour .menuXHidden {
+.HeaderFour .menuX, .HeaderFour .menuXHidden {
     display: none;
     position: absolute;
     top: 0.75rem;
@@ -105,10 +99,6 @@
     width: 2.25rem;
     height: 0.4rem;
     border-radius: 0.2rem;
-}
-
-#light .HeaderFour .menu span  {
-    background-color: rgb(49, 49, 48);
 }
 
 .HeaderFour .switch {
@@ -125,18 +115,6 @@
     'wght' 800,
     'GRAD' 0,
     'opsz' 4
-}
-
-#light .HeaderFour .material-symbols-outlined {
-    color: rgb(243, 162, 12);
-}
-
-.HeaderFour .active .material-symbols-outlined {
-    color: white;
-}
-
-#light .HeaderFour .active .material-symbols-outlined {
-    color: white;
 }
 
 @media (max-width: 760px) {
