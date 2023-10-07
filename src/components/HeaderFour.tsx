@@ -13,7 +13,6 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
 
  return (
     <nav className='HeaderThree'>
-      <div className='title'><Link to='/'>Advanced</Link></div>
       <div className='switch'>
         <label>{theme === 'light' ? 
           <span className="material-symbols-outlined">
@@ -25,30 +24,33 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
       }</label>
           <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
-      <div className={!menuOpen ? "menu" : ""} onClick={() => {
-        setMenuOpen(!menuOpen)
-      }}>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-      <div className={!menuOpen ? "menuXHidden" : "menuX"} onClick={() => {
-        setMenuOpen(!menuOpen)
-      }}>
-        <span className="material-symbols-outlined">
-          close
-        </span>
-      </div>
-      <ul className={menuOpen ? "open" : ""}>
-        <li><NavLink to='/'>
+      <div>
+        <div className='title'><Link to='/'>Epic</Link></div>
+        <div className={!menuOpen ? "menu" : ""} onClick={() => {
+          setMenuOpen(!menuOpen)
+        }}>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div className={!menuOpen ? "menuXHidden" : "menuX"} onClick={() => {
+          setMenuOpen(!menuOpen)
+        }}>
           <span className="material-symbols-outlined">
-            home
+            close
           </span>
-        </NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/services'>Services</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
-      </ul>
+        </div>
+        <ul className={menuOpen ? "open" : ""}>
+          <li><NavLink to='/'>
+            <span className="material-symbols-outlined">
+              home
+            </span>
+          </NavLink></li>
+          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to='/services'>Services</NavLink></li>
+          <li><NavLink to='/contact'>Contact</NavLink></li>
+        </ul>
+      </div> 
     </nav>
   )
 }
