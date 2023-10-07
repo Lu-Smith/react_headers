@@ -13,17 +13,26 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
 
  return (
     <nav className='HeaderFour'>
+      <div className='TopHeader'>
+      <span className="material-symbols-outlined">
+        crowdsource
+      </span>
       <div className='switch'>
         <label>{theme === 'light' ? 
-          <span className="material-symbols-outlined">
-          light_mode
-          </span> : 
-          <span className="material-symbols-outlined">
-          dark_mode
-          </span>
-      }</label>
-          <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
+            <span className="material-symbols-outlined">
+            light_mode
+            </span> : 
+            <span className="material-symbols-outlined">
+            dark_mode
+            </span>
+        }</label>
+        <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
+      <div>
+        ?
+      </div>
+      </div>
+      
       <div className='MainHeader'>
         <div className='title'><Link to='/'>Epic</Link></div>
         <div className={!menuOpen ? "menu" : ""} onClick={() => {
