@@ -1,0 +1,198 @@
+#dark .HeaderFour .active {
+    font-weight: 800;
+}
+
+#light .HeaderFour .active {
+    font-weight: 800;
+    color: white;
+}
+
+.HeaderFour {
+    background-color: rgb(3, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    padding-top: 1.2rem;
+}
+
+.HeaderFour .MainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#light .HeaderFour {
+    background-color: rgb(52, 80, 80);
+}
+
+.HeaderFour .title a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#light .HeaderFour .title a {
+    color: white;
+}
+
+.HeaderFour ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderFour ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(250, 248, 238);
+    padding: 0.8rem 0.6rem;
+    border-radius: 0.1rem;
+    transition: 200ms all ease-in-out;
+}
+
+#light .HeaderFour ul li a {
+    color: rgb(250, 248, 238);
+    font-weight: 500;
+    transition: 200ms all ease-in-out;
+}
+
+.HeaderFour ul li a:not(.active):hover {
+    color: black;
+}
+
+#light .HeaderFour ul li a:not(.active):hover {
+    color: black;
+}
+
+.HeaderFour .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.HeaderFour .menuX {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.HeaderFour .menuXHidden {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.HeaderFour .menu span {
+    background-color: rgb(250, 248, 238);
+    width: 2.25rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+#light .HeaderFour .menu span  {
+    background-color: rgb(49, 49, 48);
+}
+
+.HeaderFour .switch {
+    display: flex;
+    width: 90px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.HeaderFour  .material-symbols-outlined {
+    color: black;
+    font-variation-settings:
+    'FILL' 10,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 4
+}
+
+#light .HeaderFour .material-symbols-outlined {
+    color: rgb(243, 162, 12);
+}
+
+.HeaderFour .active .material-symbols-outlined {
+    color: white;
+}
+
+#light .HeaderFour .active .material-symbols-outlined {
+    color: white;
+}
+
+@media (max-width: 760px) {
+    .HeaderFour .menu {
+        display: flex;
+    }
+
+    .HeaderFour .menuX {
+        display: flex;
+    }
+
+    .HeaderFour .menuXHidden {
+        display: none;
+    }
+
+    .HeaderFour {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .HeaderFour ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .HeaderFour ul.open {
+        display: flex;
+    }
+
+    .HeaderFour ul li {
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .HeaderFour ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+    .HeaderFour .switch  label{
+        display: none;
+    }
+
+    .HeaderFour .switch {
+        justify-content: center;
+    }
+
+    .HeaderFour .active {
+        border: none;
+        font-weight: 700;
+    }
+    
+    #light .HeaderFour .active {
+        border: none;
+        font-weight: 700;
+    }
+}

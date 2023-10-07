@@ -12,7 +12,7 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
  return (
-    <nav className='HeaderThree'>
+    <nav className='HeaderFour'>
       <div className='switch'>
         <label>{theme === 'light' ? 
           <span className="material-symbols-outlined">
@@ -24,7 +24,7 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
       }</label>
           <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
-      <div>
+      <div className='MainHeader'>
         <div className='title'><Link to='/'>Epic</Link></div>
         <div className={!menuOpen ? "menu" : ""} onClick={() => {
           setMenuOpen(!menuOpen)
