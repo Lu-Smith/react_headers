@@ -18,12 +18,20 @@
     padding-top: 1.2rem;
 }
 
-.HeaderFour .MainHeader {
+.HeaderFour .MainHeader, .HeaderFour .TopHeader {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  
     width: 100vw;
+}
 
+.HeaderFour .MainHeader {
+    justify-content: space-between;
+}
+
+.HeaderFour .TopHeader {
+    padding: 0rem 1.2rem;
+    justify-content: space-between;
 }
 
 #light .HeaderFour {
@@ -37,6 +45,7 @@
     text-decoration: none;
     color: white;
     padding: 0.8rem 0.6rem;
+    width: 100px;
 }
 
 #light .HeaderFour .title a {
