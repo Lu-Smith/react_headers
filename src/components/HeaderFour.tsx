@@ -14,7 +14,7 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
  return (
     <nav className='HeaderFour'>
       <div className='TopHeader'>
-      <span className="material-symbols-outlined">
+      <span className="material-symbols-outlined logo">
         crowdsource
       </span>
       <div className='switch'>

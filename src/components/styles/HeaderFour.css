@@ -15,18 +15,51 @@
     flex-direction: column;
     position: sticky;
     top: 0;
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
 }
 
 .HeaderFour .MainHeader, .HeaderFour .TopHeader {
     display: flex;
     align-items: center;
-  
     width: 100vw;
 }
 
 .HeaderFour .MainHeader {
     justify-content: space-between;
+    padding-left: 19.2px;
+}
+
+.HeaderFour .TopHeader {
+    justify-content: space-between;
+}
+
+#light .HeaderFour {
+    background-color: rgb(176, 189, 189);
+}
+
+.HeaderFour .TopHeader .logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background-image: radial-gradient(circle at 10% 20%, rgb(245, 135, 44) 15%, rgb(0, 14, 6) 40.2%, rgb(231, 130, 35) 60.3%);
+    -webkit-background-clip: text;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
+}
+
+.HeaderFour .title a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0rem 0.6rem 0.8rem;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
 }
 
 .HeaderFour .TopHeader {
@@ -34,22 +67,10 @@
     justify-content: space-between;
 }
 
-#light .HeaderFour {
-    background-color: rgb(97, 134, 134);
-}
-
-.HeaderFour .title a {
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    padding: 0.8rem 0.6rem;
-    width: 100px;
-}
-
 #light .HeaderFour .title a {
-    color: white;
+    color: transparent;
+    background-image: radial-gradient(circle at 10% 20%, rgb(245, 135, 44) 15%, rgb(0, 14, 6) 40.2%, rgb(231, 130, 35) 60.3%);
+    -webkit-background-clip: text;
 }
 
 .HeaderFour ul {
@@ -120,9 +141,9 @@
 .HeaderFour  .material-symbols-outlined {
     color: black;
     font-variation-settings:
-    'FILL' 10,
+    'FILL' 0,
     'wght' 800,
-    'GRAD' 0,
+    'GRAD' 100,
     'opsz' 4
 }
 
