@@ -28,8 +28,7 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
         }</label>
         <ReactSwitch checked={theme === "dark"} onChange={toggleTheme}/>
       </div>
-      <div>
-        ?
+      <div className='emptyLogo'>
       </div>
       </div>
       

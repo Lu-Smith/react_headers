@@ -1,3 +1,18 @@
+@keyframes rotateLogo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    20% {
+        transform: rotateY(-45deg);
+    }
+    80% {
+        transform: rotateY(45deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+  }
+
 #dark .HeaderFour .active {
     font-weight: 800;
 }
@@ -47,6 +62,11 @@
     -webkit-background-clip: text;
     font-size: 60px;
     text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
+    animation: rotateLogo 15s linear;
+}
+
+.HeaderFour .TopHeader .emptyLogo {
+    width: 100px;
 }
 
 .HeaderFour .title a {
