@@ -28,17 +28,20 @@
     }
 }
 
-#dark .HeaderFour .active {
+.HeaderFour .active {
     font-weight: 700;
-    background-color: black;
-    color: rgb(238, 231, 133);
+    background-color: transparent;
+    transform: translateY(15px);
+    letter-spacing: 1px;
+}
+
+#dark .HeaderFour .active {
+    border-top: 2px solid rgb(243, 121, 7);
+    color: rgb(243, 121, 7);
 }
 
 #light .HeaderFour .active {
-    font-weight: 700;
     color: rgb(184, 23, 23);
-    background-color: transparent;
-    transform: translateY(15px);
     border-top: 2px solid rgb(184, 23, 23);
 }
 
@@ -50,7 +53,7 @@
     flex-direction: column;
     position: sticky;
     top: 0;
-    box-shadow: 2px 2px 2px rgba(0 ,0 ,0 , 0.3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .HeaderFour .MainHeader, .HeaderFour .TopHeader {
@@ -81,8 +84,12 @@
     background-image: radial-gradient(circle at 10% 20%, rgb(243, 121, 7) 15%, rgb(184, 23, 23) 40.2%, rgb(12, 11, 0) 60.3%);
     -webkit-background-clip: text;
     font-size: 80px;
-    text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     animation: rotateLogo 20s linear infinite;
+}
+
+#dark .HeaderFour .TopHeader .logo {
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.3);
 }
 
 .HeaderFour .TopHeader .emptyLogo {
@@ -101,7 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.3);
 }
 
 .HeaderFour .TopHeader {
@@ -139,7 +146,7 @@
 }
 
 .HeaderFour ul li a:not(.active):hover {
-    color: black;
+    color: rgb(243, 121, 7);
 }
 
 #light .HeaderFour ul li a:not(.active):hover {
@@ -182,7 +189,7 @@
 
 .HeaderFour  .material-symbols-outlined {
     animation: rotateIcon 2s linear;
-    color: white;
+    color: rgb(243, 121, 7);
     font-size: 2rem;
     font-variation-settings:
     'FILL' 0,
@@ -205,6 +212,17 @@
 #light .HeaderFour .material-symbols-outlined:not(.active):hover {
     animation: rotateIcon 2s linear infinite;
     color: rgb(184, 23, 23);
+    font-size: 2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 10,
+    'opsz' 4
+}
+
+#dark .HeaderFour .material-symbols-outlined:not(.active):hover {
+    animation: rotateIcon 2s linear infinite;
+    color: rgb(243, 121, 7);
     font-size: 2rem;
     font-variation-settings:
     'FILL' 0,
