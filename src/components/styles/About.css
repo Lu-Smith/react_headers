@@ -5,5 +5,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+.About p {
+    width: 50%;
+    text-align: justify;
+}
+
+@media (max-width: 760px) {
+    .About p {
+        width: 80%;
+    }
 }
