@@ -5,3 +5,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.Footer a {
+    text-decoration: none;
+    color: rgb(184, 23, 23);
+}
+
+.Footer a:hover {
+    text-decoration: underline;
+    color: rgb(243, 121, 7);
+}
