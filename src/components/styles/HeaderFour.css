@@ -242,6 +242,18 @@
     'opsz' 4
 }
 
+#dark .HeaderFour .material-symbols-outlined.logo:hover {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background-image: radial-gradient(circle at 10% 20%, rgb(243, 121, 7) 15%, rgb(184, 23, 23) 40.2%, rgb(12, 11, 0) 60.3%);
+    -webkit-background-clip: text;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
 
 @media (max-width: 760px) {
     .HeaderFour .menu {
