@@ -1,0 +1,20 @@
+.Services {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Services p {
+    width: 50%;
+    text-align: justify;
+}
+
+@media (max-width: 760px) {
+    .Services p {
+        width: 80%;
+    }
+}
