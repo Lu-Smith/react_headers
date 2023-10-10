@@ -19,7 +19,7 @@ const HeaderFour = ({toggleTheme, theme}: ThemeProps) => {
       </span>
       <div className='switch'>
         <label>{theme === 'light' ? 
-            <span className="material-symbols-outlined">
+            <span className="material-symbols-outlined sun">
             light_mode
             </span> : 
             <span className="material-symbols-outlined">

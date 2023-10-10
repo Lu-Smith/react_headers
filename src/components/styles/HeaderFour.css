@@ -18,10 +18,10 @@
         transform: translateY(0%);
     }
     20% {
-        transform: translateY(10%);
+        transform: translateY(5%);
     }
     80% {
-        transform: translateY(-10%);
+        transform: translateY(-5%);
     }
     100% {
         transform: translateY(0%);
@@ -191,8 +191,19 @@
     'opsz' 4
 }
 
-#light .HeaderFour  .material-symbols-outlined:hover {
+#light .HeaderFour .material-symbols-outlined.sun {
     animation: rotateIcon 2s linear;
+    color: rgb(226, 223, 23);
+    font-size: 2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 10,
+    'opsz' 4
+}
+
+#light .HeaderFour .material-symbols-outlined:not(.active):hover {
+    animation: rotateIcon 2s linear infinite;
     color: rgb(184, 23, 23);
     font-size: 2rem;
     font-variation-settings:
@@ -201,6 +212,18 @@
     'GRAD' 10,
     'opsz' 4
 }
+
+#light .HeaderFour .material-symbols-outlined.sun:not(.active):hover {
+    animation: rotateIcon 2s linear infinite;
+    color: rgb(247, 246, 243);
+    font-size: 2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 10,
+    'opsz' 4
+}
+
 
 @media (max-width: 760px) {
     .HeaderFour .menu {
