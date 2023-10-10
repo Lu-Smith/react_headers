@@ -58,7 +58,7 @@
     align-items: center;
     justify-content: center;
     color: transparent;
-    background-image: radial-gradient(circle at 10% 20%, rgb(245, 135, 44) 15%, rgb(0, 14, 6) 40.2%, rgb(231, 130, 35) 60.3%);
+    background-image: radial-gradient(circle at 10% 20%, rgb(238, 231, 133) 15%, rgb(238, 62, 8) 40.2%, rgb(238, 231, 133) 60.3%);
     -webkit-background-clip: text;
     font-size: 60px;
     text-shadow: 1px 1px 1px rgba(0 ,0 ,0 , 0.3);
@@ -73,7 +73,9 @@
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: transparent;
+    background-image: radial-gradient(circle at 10% 20%, rgb(238, 231, 133) 15%, rgb(238, 62, 8) 40.2%, rgb(238, 231, 133) 60.3%);
+    -webkit-background-clip: text;
     padding: 0rem 0.6rem 0.8rem;
     width: 100px;
     display: flex;
