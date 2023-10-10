@@ -1,16 +1,17 @@
 .Services {
     width: 100vw;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.Services h4 {
+    margin-bottom: 20px;
 }
 
 .Services p {
-    width: 50%;
+    width: 70%;
     text-align: justify;
+    margin: 0 auto;
 }
 
 @media (max-width: 760px) {
