@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Home.css';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='Home'>Welcome to the Headers Display Page.</div>
   )
 }
 
