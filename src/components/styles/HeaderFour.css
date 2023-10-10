@@ -46,7 +46,6 @@
 }
 
 .HeaderFour {
-    background-color: rgb(3, 34, 34);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +74,15 @@
     background-color: rgb(176, 189, 189);
 }
 
+#dark .HeaderFour {
+    background-color: rgb(3, 34, 34);
+}
+
+.HeaderFour .TopHeader {
+    padding: 0 1.2rem;
+    justify-content: space-between;
+}
+
 .HeaderFour .TopHeader .logo {
     width: 100px;
     display: flex;
@@ -84,8 +92,11 @@
     background-image: radial-gradient(circle at 10% 20%, rgb(243, 121, 7) 15%, rgb(184, 23, 23) 40.2%, rgb(12, 11, 0) 60.3%);
     -webkit-background-clip: text;
     font-size: 80px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     animation: rotateLogo 20s linear infinite;
+}
+
+#light .HeaderFour .TopHeader .logo {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #dark .HeaderFour .TopHeader .logo {
@@ -108,18 +119,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.3);
-}
-
-.HeaderFour .TopHeader {
-    padding: 0 1.2rem;
-    justify-content: space-between;
 }
 
 #light .HeaderFour .title a {
-    color: transparent;
-    background-image: radial-gradient(circle at 10% 20%, rgb(243, 121, 7) 15%, rgb(184, 23, 23) 40.2%, rgb(12, 11, 0) 60.3%);
-    -webkit-background-clip: text;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#dark .HeaderFour .title a {
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.3);
 }
 
 .HeaderFour ul {
@@ -139,12 +146,6 @@
     transition: 200ms all ease-in-out;
 }
 
-#light .HeaderFour ul li a {
-    color: rgb(250, 248, 238);
-    font-weight: 500;
-    transition: 200ms all ease-in-out;
-}
-
 .HeaderFour ul li a:not(.active):hover {
     color: rgb(243, 121, 7);
 }
@@ -153,24 +154,19 @@
     color: rgb(184, 23, 23);
 }
 
-.HeaderFour .menu {
+.HeaderFour .menuX, .HeaderFour .menuXHidden, .HeaderFour .menu {
     display: none;
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 1rem;
+    right: 1rem;
     flex-direction: column;
+    justify-content: center;
+}
+
+.HeaderFour .menu {
     justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
-}
-
-.HeaderFour .menuX, .HeaderFour .menuXHidden {
-    display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .HeaderFour .menu span {
@@ -211,7 +207,6 @@
 
 #light .HeaderFour .material-symbols-outlined:not(.active):hover {
     animation: rotateIcon 2s linear infinite;
-    color: rgb(184, 23, 23);
     font-size: 2rem;
     font-variation-settings:
     'FILL' 0,
@@ -220,15 +215,12 @@
     'opsz' 4
 }
 
+#light .HeaderFour .material-symbols-outlined:not(.active):hover {
+    color: rgb(184, 23, 23);
+}
+
 #dark .HeaderFour .material-symbols-outlined:not(.active):hover {
-    animation: rotateIcon 2s linear infinite;
     color: rgb(243, 121, 7);
-    font-size: 2rem;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' 10,
-    'opsz' 4
 }
 
 #light .HeaderFour .material-symbols-outlined.sun:not(.active):hover {
@@ -255,23 +247,18 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-
 @media (max-width: 760px) {
-    .HeaderFour .menu {
-        display: flex;
-    }
-
-    .HeaderFour .menuX {
-        display: flex;
-    }
-
-    .HeaderFour .menuXHidden {
-        display: none;
-    }
-
     .HeaderFour {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .HeaderFour .menu, .HeaderFour .menuX  {
+        display: flex;
+    }
+
+    .HeaderFour .menuXHidden, .HeaderFour .title a {
+        display: none;
     }
 
     .HeaderFour ul {
@@ -295,7 +282,7 @@
         margin: 0.2rem 0.5rem;
     }
 
-    .HeaderFour .switch  label{
+    .HeaderFour .switch label {
         display: none;
     }
 
@@ -309,18 +296,13 @@
         transform: translateX(25px);
     }
     
-    #light .HeaderFour .active {
-        border: none;
-        font-weight: 700;
-    }
-
     #dark .HeaderFour .active {
+        border: none;
         border-left: 4px solid rgb(243, 121, 7);
-        color: rgb(243, 121, 7);
     }
     
     #light .HeaderFour .active {
-        color: rgb(184, 23, 23);
+        border: none;
         border-left: 4px solid rgb(184, 23, 23);
     }
 
@@ -332,4 +314,5 @@
         'GRAD' 10,
         'opsz' 4
     }
+
 }
