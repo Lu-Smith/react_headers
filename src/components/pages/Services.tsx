@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Services.css';
 
 const Services = () => {
   return (
-    <div>
-      <h2>Services</h2>
+    <div className='Services'>
+      <h4>Services</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore culpa totam atque iste repellat nihil quidem, fugiat, deserunt magni saepe dolorem aliquam pariatur assumenda id veniam eligendi tempora expedita. Vero minima officiis possimus quaerat! Quia, ex itaque cupiditate incidunt ratione unde, quasi necessitatibus rem ullam quaerat nobis temporibus dolor porro sunt fugit inventore deleniti vero a odit minima maxime quis, illum reiciendis officia. Nihil laboriosam pariatur, harum provident eos asperiores repellendus eveniet quod! Atque, quas. Quod tempora sit veniam. Harum, mollitia illum minima culpa dolorum distinctio. Incidunt sit labore veritatis tempore commodi quae voluptatum eveniet sapiente non? Consequatur, minima!</p>
       <br />
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore culpa totam atque iste repellat nihil quidem, fugiat, deserunt magni saepe dolorem aliquam pariatur assumenda id veniam eligendi tempora expedita. Vero minima officiis possimus quaerat! Quia, ex itaque cupiditate incidunt ratione unde, quasi necessitatibus rem ullam quaerat nobis temporibus dolor porro sunt fugit inventore deleniti vero a odit minima maxime quis, illum reiciendis officia. Nihil laboriosam pariatur, harum provident eos asperiores repellendus eveniet quod! Atque, quas. Quod tempora sit veniam. Harum, mollitia illum minima culpa dolorum distinctio. Incidunt sit labore veritatis tempore commodi quae voluptatum eveniet sapiente non? Consequatur, minima!</p>
