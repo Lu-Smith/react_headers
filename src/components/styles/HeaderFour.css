@@ -174,7 +174,7 @@
 }
 
 .HeaderFour .menu span {
-    background-color: rgb(250, 248, 238);
+    background-color: rgb(184, 23, 23);
     width: 2.25rem;
     height: 0.4rem;
     border-radius: 0.2rem;
@@ -193,7 +193,7 @@
     font-size: 2rem;
     font-variation-settings:
     'FILL' 0,
-    'wght' 100,
+    'wght' 200,
     'GRAD' 10,
     'opsz' 4
 }
@@ -242,7 +242,8 @@
     'opsz' 4
 }
 
-#dark .HeaderFour .material-symbols-outlined.logo:hover {
+#dark .HeaderFour .material-symbols-outlined.logo:hover,
+#light .HeaderFour .material-symbols-outlined.logo:hover {
     width: 100px;
     display: flex;
     align-items: center;
@@ -285,7 +286,7 @@
     }
 
     .HeaderFour ul li {
-        width: 40%;
+        width: 20%;
         text-align: center;
         margin: 0 auto;
     }
@@ -305,10 +306,30 @@
     .HeaderFour .active {
         border: none;
         font-weight: 700;
+        transform: translateX(25px);
     }
     
     #light .HeaderFour .active {
         border: none;
         font-weight: 700;
+    }
+
+    #dark .HeaderFour .active {
+        border-left: 4px solid rgb(243, 121, 7);
+        color: rgb(243, 121, 7);
+    }
+    
+    #light .HeaderFour .active {
+        color: rgb(184, 23, 23);
+        border-left: 4px solid rgb(184, 23, 23);
+    }
+
+    .HeaderFour .material-symbols-outlined {
+        font-size: 2rem;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 10,
+        'opsz' 4
     }
 }
